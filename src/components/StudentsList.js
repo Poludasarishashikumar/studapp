@@ -4,18 +4,29 @@ import Student from './Student';
 import classes from './StudentsList.module.css';
 
 const StudentList = (props) => {
+ 
+   
+  
   return (
     <ul className={classes['students-list']}>
       {props.students.map((student) => (
+
+        
+        
         <Student
           key={student.id}
+          Id1={student.studentId}
           Id={student.id}
+
+
           firstName={student.firstName}
           lastName={student.lastName}
           email={student.email}
           status={student.status}
+         
         />
-      ))}
+        ))}
+       
     </ul>
   );
 };

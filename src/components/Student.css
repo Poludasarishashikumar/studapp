@@ -1,3 +1,4 @@
+@media (min-width: 580px) {
 .item {
     display: flex;
     justify-content: space-between;
@@ -36,7 +37,7 @@
     border-radius: 12px;
   }
   
-  @media (min-width: 580px) {
+  
     .item__description {
       flex-direction: row;
       align-items: center;
